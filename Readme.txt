@@ -1,4 +1,4 @@
-Sposób uruchomienia:Otwieramy folder przez VSC i wpisujemy w terminalu "node app.js",Wpisy na terminalu będą nas informować o jakim numerze 
+Sposób uruchomienia:Pobieramy i Otwieramy folder przez VSC i wpisujemy w terminalu "node app.js",Wpisy na terminalu będą nas informować o jakim numerze 
     zadanie bieżaco jest wykonywane.
 
 Opis działania:

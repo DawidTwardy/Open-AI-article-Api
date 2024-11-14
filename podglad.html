@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podgląd Artykułu</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <script>
+        async function loadArticleFromFile() {
+            try {
+                const response = await fetch('artykul.html');
+                if (!response.ok) {
+                    throw new Error('Błąd podczas ładowania pliku artykul.html');
+                }
+
+                const data = await response.text();
+                
+                
+                const bodyContent = `
+                    <header>
+                        <h1 class="headerText">Podgląd Artykułu</h1>
+                    </header>
+                    <div class="main-container" id="article-content"></div>
+                    <div class="footer">
+                        <p class="textfooter">2024 Dawid Twardy, Zadanie Rekrutacyjne OXIDO.</p>
+                    </div>
+                `;
+                
+              
+                document.body.innerHTML = bodyContent;
+
+               
+                const articles = data.split(/\n{4,}/);
+                const contentContainer = document.getElementById('article-content');
+               
+                articles.forEach(article => {
+                    if (article.trim()) {  
+                        const articleDiv = document.createElement('div');
+                        articleDiv.className = 'article-content';
+                        articleDiv.innerHTML = article.trim().replace(/\n{2,}/g, '<br>'); 
+                        contentContainer.appendChild(articleDiv);
+                    }
+                });
+            } catch (error) {
+                console.error('Błąd:', error);
+                document.body.innerHTML = '<p>Nie udało się załadować artykułu.</p>';
+            }
+        }
+
+        
+        window.onload = loadArticleFromFile;
+    </script>
+</body>
+</html>

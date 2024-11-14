@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szablon Artykuł</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <script>
+       
+        async function loadArticleFromFile() {
+            try {
+               
+                const bodyContent = `
+                    <header>
+                        <h1 class="headerText">Szablon dla artykułów</h1>
+                    </header>
+                    <div class="main-container" id="article-content">
+                    </div>
+                    <div class="footer">
+                        <p class="textfooter">2024 Dawid Twardy, Zadanie Rekrutacyjne OXIDO.</p>
+                    </div>
+                `;
+                
+                
+                document.body.innerHTML = bodyContent;
+
+                
+                const exampleArticle = `
+                    <article class="article-content">
+                        <h1>Sztuczna inteligencja: wpływ i wyzwania</h1>
+                        <p>Sztuczna inteligencja to dziedzina nauki i technologii zajmująca się tworzeniem maszyn i programów zdolnych do wykonywania zadań wymagających ludzkiej inteligencji, takich jak uczenie się, rozumienie języka naturalnego i podejmowanie decyzji. AI stała się integralną częścią naszego codziennego życia, od asystentów głosowych w smartfonach, jak Siri czy Google Assistant, po systemy rekomendacyjne na platformach streamingowych, takich jak Netflix czy Spotify. Wspiera nas w planowaniu tras, automatyzacji domowych urządzeń oraz w komunikacji. Obecnie jest o niej bardzo głośno, chociażby za sprawą dużych modeli językowych, jak ChatGPT.</p>
+                    </article>
+                `;
+                
+                
+                document.getElementById('article-content').innerHTML = exampleArticle;
+            } catch (error) {
+                console.error('Błąd podczas ładowania artykułu:', error);
+                document.body.innerHTML = '<p>Nie udało się załadować artykułu.</p>';
+            }
+        }
+
+        
+        window.onload = loadArticleFromFile;
+    </script>
+</body>
+</html>

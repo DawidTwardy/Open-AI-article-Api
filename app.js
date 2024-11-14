@@ -1,7 +1,7 @@
 import fs from 'fs';          
 import fetch from 'node-fetch'; 
 
-const apiKey = "Klucz Do Sztucznej OpenAI";  
+const apiKey = "Klucz Do OpenAI";  
 
 
 function readFileAndPreparePrompts(filePath) {

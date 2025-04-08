@@ -1,12 +1,12 @@
 
-How to Run
+# How to Run
 
 1. Download the project and open the folder in Visual Studio Code (VSC).
 2. Open the terminal in VSC and run the following command:
    ```bash
    node app.js
 
-    The terminal will display information about the task number currently being executed.
+The terminal will display information about the task number currently being executed.
 
 # Description
  app.js
@@ -34,7 +34,7 @@ How to Run
     
         To run the program, call processFile(testy.txt), where testy.txt is the source file containing the data.
 
-#HTML Files
+# HTML Files
 
   szablon.html:
     A simple HTML page that dynamically loads the CSS to visualize how the articles will look on the webpage.
@@ -42,20 +42,15 @@ How to Run
  podglad.html:
     This file loads articles from artkul.html. It includes error handling in case the file fails to load. It processes the artkul.html file, recognizing new articles based on the separation of at least four newline characters. The function loadArticleFromFil is used to load the articles after the page has fully loaded.
 
-#Tech Stack
+# Tech Stack
 
-   Node.js: JavaScript runtime used to run the app.
+   1. Node.js: JavaScript runtime used to run the app.
+    2. fs (File System): Node.js module for handling file operations.
+    3. node-fetch: A module used to make HTTP requests to the OpenAI API.
+    4. OpenAI API: Used to generate responses based on prompts sent to GPT-3.5-turbo.
+    5. HTML/CSS: For building and styling the frontend pages.
 
-    fs (File System): Node.js module for handling file operations.
+# Author
 
-    node-fetch: A module used to make HTTP requests to the OpenAI API.
+This project was developed by Dawid Twardy.
 
-    OpenAI API: Used to generate responses based on prompts sent to GPT-3.5-turbo.
-
-    HTML/CSS: For building and styling the frontend pages.
-
-#Author
-
-This project was developed by ## Dawid Twardy.
-
-If you encounter any issues or have suggestions for improvement, feel free to open an issue or contribute to the project!

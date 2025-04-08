@@ -1,4 +1,3 @@
-## Project README
 
 How to Run
 
@@ -9,8 +8,8 @@ How to Run
 
     The terminal will display information about the task number currently being executed.
 
-## Description
-# app.js
+# Description
+ app.js
 
         Importing Dependencies:
         We import fs and node-fetch to handle file operations and API requests to OpenAI.
@@ -37,23 +36,23 @@ How to Run
 
 #HTML Files
 
-    ##szablon.html:
+  szablon.html:
     A simple HTML page that dynamically loads the CSS to visualize how the articles will look on the webpage.
 
-   ## podglad.html:
+ podglad.html:
     This file loads articles from artkul.html. It includes error handling in case the file fails to load. It processes the artkul.html file, recognizing new articles based on the separation of at least four newline characters. The function loadArticleFromFil is used to load the articles after the page has fully loaded.
 
 #Tech Stack
 
-  ## Node.js: JavaScript runtime used to run the app.
+   Node.js: JavaScript runtime used to run the app.
 
-   ## fs (File System): Node.js module for handling file operations.
+    fs (File System): Node.js module for handling file operations.
 
-    ##node-fetch: A module used to make HTTP requests to the OpenAI API.
+    node-fetch: A module used to make HTTP requests to the OpenAI API.
 
-    ##OpenAI API: Used to generate responses based on prompts sent to GPT-3.5-turbo.
+    OpenAI API: Used to generate responses based on prompts sent to GPT-3.5-turbo.
 
-   ## HTML/CSS: For building and styling the frontend pages.
+    HTML/CSS: For building and styling the frontend pages.
 
 #Author
 

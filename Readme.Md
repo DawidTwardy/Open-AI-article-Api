@@ -1,6 +1,6 @@
-# Project README
+## Project README
 
-## How to Run
+How to Run
 
 1. Download the project and open the folder in Visual Studio Code (VSC).
 2. Open the terminal in VSC and run the following command:
@@ -9,8 +9,8 @@
 
     The terminal will display information about the task number currently being executed.
 
-# Description
-## app.js
+## Description
+# app.js
 
         Importing Dependencies:
         We import fs and node-fetch to handle file operations and API requests to OpenAI.

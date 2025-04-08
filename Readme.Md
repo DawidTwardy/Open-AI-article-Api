@@ -45,10 +45,10 @@ The terminal will display information about the task number currently being exec
 # Tech Stack
 
    1. Node.js: JavaScript runtime used to run the app.
-    2. fs (File System): Node.js module for handling file operations.
-    3. node-fetch: A module used to make HTTP requests to the OpenAI API.
-    4. OpenAI API: Used to generate responses based on prompts sent to GPT-3.5-turbo.
-    5. HTML/CSS: For building and styling the frontend pages.
+   2. fs (File System): Node.js module for handling file operations.
+   3. node-fetch: A module used to make HTTP requests to the OpenAI API.
+   4. OpenAI API: Used to generate responses based on prompts sent to GPT-3.5-turbo.
+   5. HTML/CSS: For building and styling the frontend pages.
 
 # Author
 

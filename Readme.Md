@@ -11,28 +11,28 @@ The terminal will display information about the task number currently being exec
 # Description
  app.js
 
-        Importing Dependencies:
-        We import fs and node-fetch to handle file operations and API requests to OpenAI.
+   Importing Dependencies:
+   We import fs and node-fetch to handle file operations and API requests to OpenAI.
     
-        API Key:
-        A constant is defined to store the API key used to authenticate requests to OpenAI.
+   API Key:
+      A constant is defined to store the API key used to authenticate requests to OpenAI.
     
-        readFileAndPreparePrompts(filePath):
-        This function reads a text file specified in the filePath variable, removes any empty lines, and creates an array of objects containing {header, content}. This structure helps in generating better prompts for OpenAI. The function returns the processed array of objects.
+   readFileAndPreparePrompts(filePath):
+      This function reads a text file specified in the filePath variable, removes any empty lines, and creates an array of objects containing {header, content}. This structure helps in generating better prompts for OpenAI. The function returns the processed array of objects.
     
-        sendToOpenAI(header, content):
-        This function takes the separated header and content objects and formats them into a detailed prompt for ChatGPT. It sends the modified prompt to OpenAI's GPT-3.5-turbo API. The function handles potential issues such as missing data in the response or API communication errors. If successful, it returns the response from OpenAI.
+    sendToOpenAI(header, content):
+      This function takes the separated header and content objects and formats them into a detailed prompt for ChatGPT. It sends the modified prompt to OpenAI's GPT-3.5-turbo API. The function handles potential issues such as missing data in the response or API communication errors. If successful, it returns the response from OpenAI.
     
-        cleanHtmlResponse(response):
-        This function cleans up the HTML response by removing the "```html" tag and unnecessary spaces.
+    cleanHtmlResponse(response):
+      This function cleans up the HTML response by removing the "```html" tag and unnecessary spaces.
     
-        saveResultsToText(results, filePath):
-        This function iterates over the results array, applies cleanHtmlResponse(response) to each item, and concatenates them into a single text string. It then writes this string to a file named artkul.html. Before saving the new version, it deletes the old version of the file.
+    saveResultsToText(results, filePath):
+      This function iterates over the results array, applies cleanHtmlResponse(response) to each item, and concatenates them into a single text string. It then writes this string to a file named artkul.html. Before saving the new version, it deletes the old version of the file.
     
-        processFile(filePath):
-        The main function that accepts a file with source data. It uses the functions described above to read the file, send the data to OpenAI, modify the received data, and save the results to a file.
+    processFile(filePath):
+      The main function that accepts a file with source data. It uses the functions described above to read the file, send the data to OpenAI, modify the received data, and save the results to a file.
     
-        To run the program, call processFile(testy.txt), where testy.txt is the source file containing the data.
+      To run the program, call processFile(testy.txt), where testy.txt is the source file containing the data.
 
 # HTML Files
 
